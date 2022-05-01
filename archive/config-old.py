@@ -110,7 +110,7 @@ keys = [
     Key(["mod1", "control"], "i", lazy.spawn('nitrogen')),
     Key(["mod1", "control"], "k", lazy.spawn('slimlock')),
     Key(["mod1", "control"], "m", lazy.spawn('xfce4-settings-manager')),
-    Key(["mod1", "control"], "o", lazy.spawn(home + '/.config/qtile/scripts/picom-toggle.sh')),
+    # Key(["mod1", "control"], "o", lazy.spawn(home + '/.config/qtile/scripts/picom-toggle.sh')),
     Key(["mod1", "control"], "p", lazy.spawn('pamac-manager')),
     Key(["mod1", "control"], "r", lazy.spawn('rofi-theme-selector')),
     Key(["mod1", "control"], "s", lazy.spawn('spotify')),
@@ -153,10 +153,6 @@ keys = [
     # Key([mod2, "shift"], "Print", lazy.spawn('gnome-screenshot -i')),
 
 # MULTIMEDIA KEYS
-
-# INCREASE/DECREASE BRIGHTNESS
-    Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
 
 # INCREASE/DECREASE/MUTE VOLUME
     Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
